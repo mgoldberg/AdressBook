@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-	
+	<html>
 
 	<head>
 		<title>Address Book</title>
@@ -16,23 +16,24 @@
 		<script>
 
 			var Sam = {
-				firstName: Sam;
-				lastName: Sanchez;
+				firstName: "Sam";
+				lastName: "Sanchez";
 				address: "7777 Nice Street";
 			}
 
 			function search() {
-				return "text";
+				var content = document.getElementbyId("result");
+				content.insertAdjacentHTML();
 			}
 
 		</script>
 
 		<div>
-			<b>Last Name:</b> <input type="text" name="firstName" value=""/><br />
-			<button onclick="getElementById('result').innerHTML=search()">Search</button>
+			<b>Last Name:</b> <input type="text" name="firstName" value=""/><br>
+			<button onclick="search()">Search</button>
 		</div>
 
-		<p id = result></p>
+		<p id = "result"></p>
 
 	</body>		
 </html>	
